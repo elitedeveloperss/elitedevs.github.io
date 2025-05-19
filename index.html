@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Elite Developers | App Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,87 +15,105 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f9fd;
       color: #333;
     }
 
     header {
-      background: linear-gradient(90deg, #111, #333);
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-      padding: 4rem 1rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      max-width: 80px;
+      margin-bottom: 1rem;
     }
 
     header h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.1rem;
+      color: #e0e0e0;
     }
 
     nav {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 1rem;
-      background: #222;
-      padding: 1rem 0;
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     nav a {
-      color: white;
+      color: #2575fc;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       padding: 0.5rem 1rem;
-      border-radius: 5px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
     }
 
-    nav a:hover {
-      background: #444;
+    nav a:hover, nav a:focus {
+      background: #e3efff;
+      color: #111;
     }
 
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 3rem auto;
-      padding: 0 1rem;
+      padding: 2rem;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     }
 
     section h2 {
-      padding: 1rem;
-      border-bottom: 1px solid #ddd;
-      background: #f9f9f9;
       font-size: 1.8rem;
-      border-radius: 12px 12px 0 0;
+      color: #2575fc;
+      margin-bottom: 1rem;
     }
 
     section p, section ul {
-      padding: 1rem;
       font-size: 1rem;
       line-height: 1.6;
     }
 
     section ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    section a {
+      color: #6a11cb;
+      text-decoration: none;
+    }
+
+    section a:hover {
+      text-decoration: underline;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #111;
-      color: #ccc;
-      margin-top: 3rem;
+      background: #222;
+      color: #bbb;
     }
 
     footer a {
-      color: #ccc;
-      text-decoration: none;
+      color: #bbb;
       margin: 0 0.5rem;
+      text-decoration: none;
     }
 
     footer a:hover {
@@ -104,6 +124,7 @@
 <body>
 
   <header>
+    <img src="https://via.placeholder.com/80x80?text=Logo" alt="Elite Developers Logo" class="logo">
     <h1>Elite Developers</h1>
     <p>Smart. Clean. Powerful Android Apps.</p>
   </header>
@@ -118,7 +139,7 @@
   <section id="about">
     <h2>About Us</h2>
     <p>
-      Elite Developers is a creative app development team that focuses on building clean, fast, and user-friendly Android apps. With years of experience and a passion for design, we bring ideas to life through beautiful mobile experiences.
+      Elite Developers is a creative app development team focused on building fast, beautiful, and user-centric Android applications. Our mission is to turn ideas into intuitive digital products that empower users around the world.
     </p>
   </section>
 
@@ -134,10 +155,10 @@
   <section id="privacy">
     <h2>Privacy Policy</h2>
     <p>
-      We respect your privacy. Our apps do not collect any personal information without your consent. For full privacy terms, see the in-app privacy policy.
+      We respect your privacy. Our apps do not collect personal data without your consent. Read the in-app privacy policy for full details.
     </p>
     <p>
-      You can also view our hosted <a href="./ads.txt" target="_blank">ads.txt</a> file for AdMob compliance.
+      View our <a href="./ads.txt" target="_blank">ads.txt</a> file for AdMob compliance.
     </p>
   </section>
 
@@ -157,4 +178,3 @@
 
 </body>
 </html>
-
