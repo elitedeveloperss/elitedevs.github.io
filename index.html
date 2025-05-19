@@ -1,64 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elite Devs - App Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Developers | App Portfolio</title>
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      background: #f2f2f2;
       color: #333;
     }
+
     header {
-      background-color: #111;
-      color: #fff;
-      padding: 2rem 1rem;
+      background: linear-gradient(90deg, #111, #333);
+      color: white;
+      padding: 4rem 1rem;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background: #222;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
       padding: 0 1rem;
-    }
-    .card {
-      background: #fff;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      background: white;
       border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
     }
-    .card h2 {
-      margin-top: 0;
+
+    section h2 {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+      background: #f9f9f9;
+      font-size: 1.8rem;
+      border-radius: 12px 12px 0 0;
     }
+
+    section p, section ul {
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    section ul li {
+      margin-bottom: 0.5rem;
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: #222;
-      color: #aaa;
+      padding: 2rem 1rem;
+      background: #111;
+      color: #ccc;
+      margin-top: 3rem;
     }
-    a {
-      color: #0077cc;
+
+    footer a {
+      color: #ccc;
       text-decoration: none;
+      margin: 0 0.5rem;
     }
-    a:hover {
+
+    footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Elite Developers</h1>
-    <p>Creating Smart & Simple Android Apps</p>
+    <p>Smart. Clean. Powerful Android Apps.</p>
   </header>
 
-  <main>
-    <div class="card">
-      <h2>👋 Welcome!</h2>
-      <p>We build mobile apps with a focus on simplicity, performance, and usability.</p
+  <nav>
+    <a href="#about">About</a>
+    <a href="#apps">Apps</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Elite Developers is a creative app development team that focuses on building clean, fast, and user-friendly Android apps. With years of experience and a passion for design, we bring ideas to life through beautiful mobile experiences.
+    </p>
+  </section>
+
+  <section id="apps">
+    <h2>Our Apps</h2>
+    <ul>
+      <li><strong>📱 App Name 1:</strong> <a href="#">Download on Google Play</a></li>
+      <li><strong>📱 App Name 2:</strong> <a href="#">Download on Google Play</a></li>
+      <li><strong>📱 App Name 3:</strong> <a href="#">Download on Google Play</a></li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>
+      We respect your privacy. Our apps do not collect any personal information without your consent. For full privacy terms, see the in-app privacy policy.
+    </p>
+    <p>
+      You can also view our hosted <a href="./ads.txt" target="_blank">ads.txt</a> file for AdMob compliance.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+  </section>
+
+  <footer>
+    © 2025 Elite Developers. All rights reserved. |
+    <a href="#about">About</a> |
+    <a href="#apps">Apps</a> |
+    <a href="#privacy">Privacy</a> |
+    <a href="#contact">Contact</a>
+  </footer>
+
+</body>
+</html>
+
